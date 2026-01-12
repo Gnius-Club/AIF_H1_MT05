@@ -1,287 +1,444 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Playbook — 1º Preparatoria — Misión M05 - Rol Prompt</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-Prep1-TM5</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-<h1><span class="book-icon">📋</span> <strong>Playbook Misión M05: Rol Prompt</strong></h1>
-<div class="header-widgets">
-<div class="timer-container">
-<span id="timer">⏱️ 00:00</span>
-<button id="startStop">Start</button>
-<button id="reset">Reset</button>
-</div>
-<div class="theme-toggle">
-<i class="fas fa-sun"></i>
-<label class="switch">
-<input type="checkbox" id="theme-toggle-input">
-<span class="slider round"></span>
-</label>
-<i class="fas fa-moon"></i>
-</div>
-</div>
-</header>
-<div class="main-container">
-<aside class="activity-list">
-<h2>Actividades</h2>
-<ul>
-<li><a href="#activity-0">📝</a></li>
-<li><a href="#activity-1">1</a></li>
-<li><a href="#activity-2">2</a></li>
-<li><a href="#activity-3">3</a></li>
-<li><a href="#activity-4">4</a></li>
-<li><a href="#activity-5">5</a></li>
-</ul>
-<div class="sidebar-info">
-<p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
-<p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
-</div>
-</aside>
-<main class="content">
-<div class="progress-bar">
-<div class="progress"></div>
-</div>
-<button id="toggle-dialogues">Mostrar todos los diálogos</button>
-<section class="activity-card" id="activity-0">
-<h2 class="activity-title">📝 De un Vistazo: Misión M05 - Rol Prompt</h2>
-<p class="activity-purpose">Resumen de objetivos, secuencia y entregables de la sesión.</p>
-<div class="overview-table-container">
-<table>
-<thead>
-<tr>
-<th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
-<th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<h3>Objetivos e “I Can Statement”</h3>
-<ul>
-<li>Puedo aplicar Role-Prompting para simular perspectivas profesionales.</li>
-<li>Puedo orquestar un 'Panel de Expertos Virtual' para generar perspectivas contrapuestas.</li>
-</ul>
-<h3>Secuencia y tiempos</h3>
-<ol>
-<li>Saludo Interactivo con IA — 3 min</li>
-<li>“I Can Statement” + Desafío — 5–7 min</li>
-<li>AI GYM — 10–12 min</li>
-<li>Brain Spark — 17–20 min</li>
-<li>GNIUS STORM — 5 min</li>
-</ol>
-<h3>Entregable del Micro-Proyecto</h3>
-<ul>
-<li>Un 'Panel de Expertos Virtual' sobre un tema de interés, generando 2-3 perspectivas contrapuestas, que sirva de base para debates, productos o infografías comparativas.</li>
-</ul>
-</td>
-<td>
-<h3>Criterios de calidad</h3>
-<ul>
-<li>Claridad y especificidad en la definición de roles para la simulación.</li>
-<li>Generación de al menos 2-3 perspectivas distintivas y contrapuestas.</li>
-<li>Coherencia de las respuestas con el rol asignado.</li>
-<li>Potencial del material generado para análisis comparativo o debate.</li>
-</ul>
-<h3>Materiales y preparación</h3>
-<ul>
-<li>Proyector e internet</li>
-<li>Acceso a LLM (como ChatGPT, Gemini o Claude)</li>
-<li>Plantilla de ejemplo de prompt con roles definida</li>
-</ul>
-<h3>Preparación previa para ESTA Sesión</h3>
-<ol>
-<li>Verificar acceso a un LLM.</li>
-<li>Tener un ejemplo de prompt con roles y respuestas pre-generadas para demostración.</li>
-<li>Definir un tema de interés para el panel de expertos que sea relevante para los estudiantes.</li>
-</ol>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section class="activity-card" id="activity-1">
-<h2 class="activity-title">Saludo Interactivo con IA</h2>
-<p class="activity-purpose">Establecer tono profesional, conectar con el tema y activar a Xolo con perfil+intereses.</p>
-<div class="steps">
-<article class="step-card">
-<div class="step-content">
-<h3 class="step-title">Paso 1 — Bienvenida y foco</h3>
-<p class="step-instructions">Proyectar Diapositiva 1. Enuncia el foco conceptual del 'Rol Prompt' y su relevancia profesional para la simulación de perspectivas.</p>
-</div>
-<div class="collapsible">
-<button type="button" class="collapsible-button">Diálogo Sugerido</button>
-<div class="collapsible-content">
-<p class="dialogue assistant">Equipo: hoy exploraremos el 'Rol Prompt', una técnica avanzada para simular perspectivas profesionales con IA. Esto nos permitirá analizar problemas complejos desde múltiples ángulos, una habilidad crucial en cualquier campo.</p>
-</div>
-</div>
-</article>
-<article class="step-card">
-<div class="step-content">
-<h3 class="step-title">Paso 2 — Activación con Xolo</h3>
-<p class="step-instructions">Cada estudiante abre su chat con Xolo y envía saludo con perfil de aprendizaje e intereses + referencia a la misión.</p>
-</div>
-<div class="collapsible">
-<button type="button" class="collapsible-button">Diálogo Sugerido</button>
-<div class="collapsible-content">
-<p class="dialogue assistant">Activen a Xolo. Envienle: "Hola Xolo, soy [Nombre] y me gusta [tu interés o intereses]" Él confirmará su activación.</p>
-</div>
-</div>
-</article>
-</div>
-</section>
-<section class="activity-card" id="activity-2">
-<h2 class="activity-title">“I Can Statement” + Desafío</h2>
-<p class="activity-purpose">Alinear expectativas y definir el reto práctico.</p>
-<div class="steps">
-<article class="step-card">
-<div class="step-content">
-<h3 class="step-title">Paso 1 — Presenta el reto</h3>
-<p class="step-instructions">Proyectar Diapositiva 2. Define el reto: dirigir un 'Panel de Expertos Virtual' para obtener perspectivas contrapuestas sobre un tema.</p>
-</div>
-<div class="collapsible">
-<button type="button" class="collapsible-button">Diálogo Sugerido</button>
-<div class="collapsible-content">
-<p class="dialogue assistant">Nuestro reto del día de hoy será desbloquear nuevas perspectivas y el poder de expertos. Imaginen poder tener a su alcance un Panel de Expertos que pueden guiar para obtener perspectivas sobre diversos temas. Pueden hacer que ese panel analice profundamente cualquier tema que les interese, e incluso pueden diseñar a sus propios expertos para que puedan trabajar con ustedes. Todo ésto es posible a través de Rol Prompting, nuestro tema del día de hoy.</p>
-</div>
-</div>
-</article>
-<article class="step-card">
-<div class="step-content">
-<h3 class="step-title">Paso 2 — Escribe tu “I Can”</h3>
-<p class="step-instructions">Proyectar Diapositiva 3. Cada estudiante redacta 1-2 “I Can” concretos alineados al Micro-Proyecto.</p>
-</div>
-<div class="collapsible">
-<button type="button" class="collapsible-button">Diálogo Sugerido</button>
-<div class="collapsible-content">
-<p class="dialogue assistant">Terminando ésta sesión serán capaces de decir: "Puedo diseñar mis propios expertos para crear mejores respuestas con IA."</p>
-</div>
-</div>
-</article>
-</div>
-</section>
-<section class="activity-card" id="activity-3">
-<h2 class="activity-title">AI GYM</h2>
-<p class="activity-purpose">Formalizar el marco/técnica de IA de la sesión.</p>
-<div class="steps">
-<article class="step-card">
-<div class="step-content">
-<h3 class="step-title">Paso 1 — Marco del día</h3>
-<p class="step-instructions">Proyectar Diapositiva 4. Introduce el 'Rol Prompt' como herramienta para orquestar un 'Panel de Expertos Virtual'.</p>
-</div>
-<div class="collapsible">
-<button type="button" class="collapsible-button">Diálogo Sugerido</button>
-<div class="collapsible-content">
-<p class="dialogue assistant">Hoy, el marco es el 'Rol Prompt'. Permite a la IA adoptar una personalidad y un punto de vista específico, lo que es invaluable para simular un panel de expertos y obtener análisis multifacéticos. Eviten roles ambiguos o preguntas genéricas. Asegúrense de que cada rol tenga una perspectiva única y relevante.</p>
-</div>
-</div>
-</article>
-<article class="step-card">
-<div class="step-content">
-<h3 class="step-title">Paso 2 — Mini-demostración</h3>
-<p class="step-instructions">Proyectar Diapositiva 5. Construye en vivo un ejemplo de prompt para simular un panel sobre la semana laboral de 4 días (CEO, líder sindical, economista).</p>
-</div>
-<div class="collapsible">
-<button type="button" class="collapsible-button">Diálogo Sugerido</button>
-<div class="collapsible-content">
-<p class="dialogue assistant">Observen cómo estructuro el prompt para cada rol. Por ejemplo: "Actúa como un CEO de una empresa tecnológica. ¿Cuál es tu postura sobre la semana laboral de 4 días y por qué?" ¿El rol está claramente definido? ¿La pregunta es específica para el rol?</p>
-</div>
-</div>
-</article>
-<article class="step-card">
-<div class="step-content">
-<h3 class="step-title">Paso 3 — Check rápido</h3>
-<p class="step-instructions">Proyectar Diapositiva 6. 2 ítems de verificación.</p>
-</div>
-<div class="collapsible">
-<button type="button" class="collapsible-button">Diálogo Sugerido</button>
-<div class="collapsible-content">
-<p class="dialogue assistant">Rápido check: ¿Qué es un 'Rol Prompt' y por qué es útil para simular un panel?</p>
-</div>
-</div>
-</article>
-</div>
-</section>
-<section class="activity-card" id="activity-4">
-<h2 class="activity-title">Brain Spark</h2>
-<p class="activity-purpose">Producir el entregable tangible del Micro-Proyecto aplicando el marco del AI GYM.</p>
-<div class="steps">
-<article class="step-card">
-<div class="step-content">
-<h3 class="step-title">Paso 1 — Producción</h3>
-<p class="step-instructions">Proyectar Diapositiva 7. Indica producir un prompt para un panel de 2-3 expertos sobre un tema de interés, y generar sus respuestas. Criterios: roles claros, perspectivas distintas.</p>
-</div>
-<div class="collapsible">
-<button type="button" class="collapsible-button">Diálogo Sugerido</button>
-<div class="collapsible-content">
-<p class="dialogue assistant">N/A</p>
-</div>
-</div>
-</article>
-<article class="step-card">
-<div class="step-content">
-<h3 class="step-title">Paso 2 — Iteración</h3>
-<p class="step-instructions">Proyectar Diapositiva 8. Refinar los prompts para asegurar perspectivas distintivas y contrapuestas. Evaluar si se podría añadir un rol más para enriquecer el debate.</p>
-</div>
-<div class="collapsible">
-<button type="button" class="collapsible-button">Diálogo Sugerido</button>
-<div class="collapsible-content">
-<p class="dialogue assistant">Antes de cerrar: validen que las perspectivas generadas son realmente contrapuestas y distintivas. Si no es así, ajusten la definición del rol o la pregunta. ¿Se podría añadir un rol adicional para una visión más completa?</p>
-</div>
-</div>
-</article>
-<article class="step-card">
-<div class="step-content">
-<h3 class="step-title">Paso 3 — Evidencia</h3>
-<p class="step-instructions">Proyectar Diapositiva 9. Solicita una captura del prompt completo y las respuestas generadas por el LLM.</p>
-</div>
-<div class="collapsible">
-<button type="button" class="collapsible-button">Diálogo Sugerido</button>
-<div class="collapsible-content">
-<p class="dialogue assistant">Suban una captura de su prompt y las respuestas del panel al canal indicado. Nombren su archivo: M05_PanelExpertos_[SuNombre].</p>
-</div>
-</div>
-</article>
-</div>
-</section>
-<section class="activity-card" id="activity-5">
-<h2 class="activity-title">GNIUS STORM</h2>
-<p class="activity-purpose">Exhibición breve, síntesis y conexión profesional.</p>
-<div class="steps">
-<article class="step-card">
-<div class="step-content">
-<h3 class="step-title">Paso 1 — Showcase relámpago</h3>
-<p class="step-instructions">2-3 equipos/personas muestran el prompt y 1-2 perspectivas destacadas (30-45 s c/u).</p>
-</div>
-<div class="collapsible">
-<button type="button" class="collapsible-button">Diálogo Sugerido</button>
-<div class="collapsible-content">
-<p class="dialogue assistant">Describan en 30 segundos: el tema de su panel, los roles que definieron y una perspectiva que les haya sorprendido o parecido clave.</p>
-</div>
-</div>
-</article>
-<article class="step-card">
-<div class="step-content">
-<h3 class="step-title">Paso 2 — Cierre ejecutivo</h3>
-<p class="step-instructions">Proyectar Diapositiva 10. Síntesis: 1 aprendizaje clave, 1 criterio de calidad, siguiente paso aplicable fuera del aula.</p>
-</div>
-<div class="collapsible">
-<button type="button" class="collapsible-button">Diálogo Sugerido</button>
-<div class="collapsible-content">
-<p class="dialogue assistant">Para cerrar, una síntesis ejecutiva: El aprendizaje clave de hoy es la importancia de definir roles precisos para obtener información diversificada y reducir sesgos. El criterio de calidad que marcó la diferencia fue la especificidad en la definición del rol. Como siguiente paso, utilicen esta técnica para analizar problemas complejos desde múltiples ángulos en sus proyectos futuros o en la toma de decisiones personales.</p>
-</div>
-</div>
-</article>
-</div>
-</section>
-</main>
-</div>
-<script src="script.js"></script>
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 5 - 1o de Preparatoria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="global-timer">⏱️ 40:00</span>
+                <button id="global-start-stop">Start</button>
+                <button id="global-reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <!-- ACTIVIDAD 0: DE UN VISTAZO -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Comando Central</h2>
+                <p class="overview-subtitle">Todo lo que necesitas para preparar y ejecutar esta misión en minutos.</p>
+                
+                <div class="command-section">
+                    <h3>🎯 Objetivo de Aprendizaje</h3>
+                    <div class="objective-box">
+                        <p><strong>Los estudiantes podrán:</strong> usar ChatGPT, Gemini o Claude para diseñar roles y formular preguntas para realizar una comparación estructurada y comprender el pensamiento crítico multi-perspectiva e identificación de sesgos.</p>
+                    </div>
+                </div>
+                <div class="command-section xolo-prompt">
+                    <h3>🤖 Prompt de Referencia para XOLO (Solo para Maestro)</h3>
+                    <div class="prompt-box">
+                        <div class="prompt-header">
+                            <span class="prompt-label">⚠️ NOTA: XOLO ya conoce el tema de esta misión. Este prompt es SOLO de referencia en caso de emergencia técnica:</span>
+                            <button class="copy-btn" onclick="copyPrompt('main-prompt')">
+                                <i class="fas fa-copy"></i> Copiar
+                            </button>
+                        </div>
+                        <pre id="main-prompt">Explícame qué es Role Prompting y por qué asignar una perspectiva (agenda, prioridades, límites) cambia el análisis. Analicemos cómo se construye un “panel” con roles opuestos y cómo detectar supuestos o sesgos en cada voz. Guíame para redactar 3 roles bien diferenciados sobre un mismo tema y para hacer una pregunta central que provoque un análisis 360°.</pre>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>⚡ Puntos Esenciales de la Misión</h3>
+                    <div class="essentials-grid">
+                        <div class="essential-card">
+                            <div class="essential-icon">🎓</div>
+                            <h4>Concepto Clave</h4>
+                            <p>Role Prompting: Es como pedirle a la IA que se ponga una "máscara" de un experto específico para que sus respuestas tengan un punto de vista y prioridades particulares.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🔧</div>
+                            <h4>Habilidad Técnica</h4>
+                            <p>Usar plataformas de IA para crear un panel de expertos virtuales con roles opuestos.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🧪</div>
+                            <h4>Experimentación</h4>
+                            <p>Probar con diferentes roles y temas polémicos para entender las limitaciones y sesgos de cada perspectiva.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">💬</div>
+                            <h4>Interacción con XOLO</h4>
+                            <p>XOLO ya conoce a cada estudiante y el tema de hoy. Solo abren el chat y comienzan a aprender. Tú guías el timing y motivación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>📦 Checklist de Materiales</h3>
+                    <div class="materials-checklist">
+                        <label><input type="checkbox"> Proyector/pantalla + presentación (5 diapositivas)</label>
+                        <label><input type="checkbox"> Internet estable + Gnius Space con XOLO activo</label>
+                        <label><input type="checkbox"> Computadora o tablet (1 por cada 2 estudiantes)</label>
+                        <label><input type="checkbox"> Acceso a ChatGPT (https://chatgpt.com/), Gemini (https://gemini.google.com/) o Claude (https://claude.ai/)</label>
+                        <label><input type="checkbox"> Cuaderno o bloc de notas digital para síntesis</label>
+                        <label><input type="checkbox"> ⚠️ Esta misión usa interacción con modelos de lenguaje (LLM) mediante PROMPTING</label>
+                        <label><input type="checkbox"> 📋 Para esta misión: Asegúrate de tener cuenta activa en al menos una de las plataformas de IA mencionadas.</label>
+                    </div>
+                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> Mantener el equipo de cómputo limpio, no consumir alimentos cerca y cerrar sesiones al terminar.</p>
+                </div>
+                <div class="command-section">
+                    <h3>🗓️ Secuencia de la Misión (40 min)</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot">1</div>
+                            <div class="timeline-content">
+                                <strong>Intro a la Misión</strong>
+                                <span class="time-badge">2 min</span>
+                                <p>Bienvenida, I Can Statement y contexto de la misión.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">2</div>
+                            <div class="timeline-content">
+                                <strong>A.I. Gym</strong>
+                                <span class="time-badge">8 min</span>
+                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre Role Prompting y el análisis multi-perspectiva (sin prompt específico).</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">3</div>
+                            <div class="timeline-content">
+                                <strong>Brain Spark</strong>
+                                <span class="time-badge">20 min</span>
+                                <p>Idear, construir y experimentar un programa con XOLO.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">4</div>
+                            <div class="timeline-content">
+                                <strong>Gnius STORM - Compartir</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Demostración y reflexión en parejas.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">5</div>
+                            <div class="timeline-content">
+                                <strong>Entrega de Evidencias</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Subir capturas a Gnius Space y finalizar misión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>🚨 Resolución Rápida de Problemas</h3>
+                    <div class="troubleshooting-list">
+                        <ul>
+                            <li><strong>Si los alumnos no pueden ingresar a Gnius Space:</strong> Activa XOLO SOS en <a href="https://xolo.gnius.club" target="_blank">xolo.gnius.club</a> para continuar la misión sin interrumpir la clase.</li>
+                            <li><strong>Si la IA da respuestas muy parecidas:</strong> Pide a XOLO que te ayude a radicalizar las agendas y límites de cada rol para marcarlos más.</li>
+<li><strong>Si la plataforma de IA (ChatGPT/Gemini/Claude) está lenta:</strong> Intenta refrescar la página o cambiar a una de las otras opciones sugeridas.</li>
+<li><strong>Si los alumnos se pierden en el análisis:</strong> Recuérdales que XOLO puede ayudarlos a sintetizar los puntos clave de los acuerdos y desacuerdos.</li>
+<li><strong>Si hay errores en el código o prompt:</strong> Recordar a los estudiantes que XOLO puede ayudar a depurar. Pídeles que copien el error y se lo muestren a XOLO.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ACTIVIDAD 1: INTRO A LA MISIÓN -->
+            <div class="activity-card" id="activity-1">
+                <div class="activity-header">
+                    <h2>🚀 Actividad 1: Intro a la Misión</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 2:00</span>
+                        <button class="timer-start-btn" data-duration="120">Iniciar</button>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Dar la bienvenida con energía.</li>
+                            <li>Pedir a los alumnos que ingresen a Gnius Space.</li>
+                            <li>Proyecta diapositiva 1 con el I Can Statement.</li>
+                            <li>Motiva: "Hoy crearán su propio consejo de expertos virtual para dominar cualquier tema".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <ul>
+                            <li>XOLO ya está listo y conoce a cada estudiante.</li>
+                            <li>Sabe que hoy toca aprender sobre Role Prompting y Pensamiento Crítico.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Escucha la misión del día.</li>
+                            <li>Loguearse en Gnius Space.</li>
+                            <li>Preparación para trabajar en parejas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 1: I Can Statement</h4>
+                    <div class="slide-content">
+                        <p><strong>🎯 Hoy seré capaz de:</strong></p>
+                        <p class="highlight-text">🤖 A orquestar múltiples perspectivas para que tomen decisiones informadas y críticas.</p>
+                        <p><strong>Aplicación real:</strong> Los analistas de políticas públicas y los comités de ética usan esta tecnología para anticipar consecuencias desde diferentes ángulos sociales y económicos.</p>
+                        <p><strong>Tu aliado:</strong> XOLO ya sabe qué vas a aprender hoy. ¡Solo abre el chat y comienza!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ACTIVIDAD 2: A.I. GYM -->
+            <div class="activity-card" id="activity-2">
+                <div class="activity-header">
+                    <h2>🧠 Actividad 2: A.I. Gym</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 8:00</span>
+                        <button class="timer-start-btn" data-duration="480">Iniciar</button>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 2.</li>
+                            <li>Indica: "Abran el chat con XOLO y salúdenlo. Él ya sabe qué les va a enseñar hoy."</li>
+                            <li>Circula para asegurar que todos interactúan con XOLO.</li>
+                            <li>Si alguien tiene dudas, recuérdale: "Pregúntale a XOLO, él te puede explicar de otra forma".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Reconoce al estudiante y sus preferencias de aprendizaje.</li>
+                            <li>Explica cómo asignar una perspectiva (agenda, prioridades, límites) cambia el análisis de la IA.</li>
+                            <li>Introduce el concepto de identificación de sesgos y supuestos en las respuestas generadas.</li>
+                            <li>Responde dudas sobre los conceptos.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Abrir el chat con XOLO y saludarlo.</li>
+                            <li>Aprender a usar Role Prompting para generar análisis 360°.</li>
+                            <li>Aprender sobre la identificación de sesgos y la responsabilidad en el uso de simulaciones.</li>
+                            <li>Despejar todas sus dudas preguntando a XOLO.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 2: A.I. GYM</h4>
+                    <div class="slide-content">
+                        <p><strong>💬 Abre el chat con XOLO y salúdalo:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"¡Hola XOLO! Estoy listo para aprender."</pre>
+                        </div>
+                        <p class="highlight-text" style="margin-top: 1rem;">✨ XOLO ya sabe quién eres y qué tema toca hoy. ¡Solo empieza a conversar!</p>
+                        <p class="highlight-text">🎯 Objetivo: Aprender a usar Role Prompting para analizar temas complejos y detectar sesgos.</p>
+                    </div>
+                </div>
+                
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">Ahora vamos a dar un paso gigante en cómo usamos la inteligencia artificial. No solo le pediremos respuestas, aprenderemos a orquestar perspectivas. Abran el chat con XOLO y salúdenlo. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy sobre Role Prompting y cómo construir paneles de expertos. No necesitan escribir un prompt especial, solo empiecen a platicar con él. Pregúntenle cómo una agenda o una prioridad cambia una respuesta y cómo podemos detectar sesgos. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy. No necesitan escribir un prompt especial, solo empiecen a platicar con él. ¡Aprovechen para despejar todas sus dudas!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ACTIVIDAD 3: BRAIN SPARK -->
+            <div class="activity-card" id="activity-3">
+                <div class="activity-header">
+                    <h2>💡 Actividad 3: Brain Spark</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 20:00</span>
+                        <button class="timer-start-btn" data-duration="1200">Iniciar</button>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta la diapositiva 3.</li>
+                            <li>Indica: "Pidan a XOLO que los ayude a idear un proyecto. Cuando tengan su GCS, pásenlo a bloques en MakeCode, prueben en el simulador y luego con el hardware real".</li>
+                            <li>Entrega por parejas los dispositivos conforme los alumnos prueben su GCS en el simulador.</li>
+                            <li>Si hay errores, recuerda: "Pregúntenle a XOLO, él los ayuda a depurar".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Ayuda a desarrollar una idea y un VIBE que aplique el diseño de roles opuestos.</li>
+                            <li>Entrega el GCS de la idea del genio.</li>
+                            <li>Resuelve errores de sintaxis o lógica.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Trabajar con XOLO una idea y un VIBE para usar un Panel de Expertos Virtual.</li>
+                            <li>Traducir el GCS de XOLO a bloques en MakeCode.</li>
+                            <li>Depurar su programa con XOLO si hay errores.</li>
+                            <li>Ejecutar el panel en la plataforma de IA elegida y analizar los resultados.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 3: Brain Spark</h4>
+                    <div class="slide-content">
+                        <p><strong>1. 💬 Pide a XOLO que te ayude a crear:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"Ayúdame a dirigir mi Panel de Expertos Virtual sobre un tema que elija. Guíame a definir 2–3 roles opuestos (con foco claro) y a pedirles respuestas comparables. Luego acompáñame a sintetizar acuerdos/desacuerdos y tomar una postura propia. Ejecuta: entrega el panel (respuestas), una comparación en bullets y mi conclusión argumentada (qué perspectiva me convenció y por qué)."</pre>
+                        </div>
+                        <p style="margin-top: 1.5rem;"><strong>2. 🔬 Experimenta y descubre con tu programa:</strong></p>
+                        <ul>
+                            <li>¿Las respuestas de los expertos reflejan realmente las prioridades de sus roles?</li>
+                            <li>¿Qué pasa si cambias un solo límite o prioridad en la descripción de un rol?</li>
+                            <li>¿Los expertos coinciden en algún punto o son totalmente opuestos?</li>
+                            <li>¿Cómo te ayuda este análisis multi-perspectiva a evitar ver una sola cara de la moneda?</li>
+                            <li>¿Qué supuestos o sesgos lograste identificar en cada una de las voces del panel?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Es hora de crear su propio Panel de Expertos! El flujo es emocionante: primero idearán con XOLO los roles más interesantes para el tema que elijan, definirán el VIBE de cada uno y luego usarán el GCS para ejecutarlo en ChatGPT, Gemini o Claude. Por ejemplo, podrían enfrentar a un ecologista radical contra un industrial desarrollista para analizar el futuro de una reserva natural. Observen cómo contrastan sus ideas y busquen puntos de acuerdo. Al final, usen las preguntas de experimentación para ver más allá de la superficie y detectar sesgos ocultos. Si tienen errores o dudas sobre cómo redactar los roles, pregúntenle a XOLO, él los ayudará a depurar su estrategia y a tomar una postura propia bien fundamentada.</p>
+                    </div>
+                </div>
+                <div class="challenge-prompt">
+                    <h4>🚀 Prompt de Desafío (para quienes terminen rápido)</h4>
+                    <div class="prompt-box">
+                        <p><strong>Si ya experimentaste con todo, pregunta a XOLO:</strong></p>
+                        <p class="challenge-text">"Ya probé con el panel básico. ¿Puedes enseñarme cómo hacer que mis expertos debatan entre ellos en lugar de solo dar respuestas separadas para encontrar puntos ciegos?"</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ACTIVIDAD 4: GNIUS STORM - COMPARTIR -->
+            <div class="activity-card" id="activity-4">
+                <div class="activity-header">
+                    <h2>⚡ Actividad 4: Gnius STORM - Compartir y Reflexionar</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Organiza las parejas para compartir.</li>
+                            <li>Gestiona los tiempos: 2 min demo + 2 min reflexión + 1 min cierre.</li>
+                            <li>Facilita retroalimentación constructiva.</li>
+                            <li>Cierra con reflexión sobre aplicaciones reales.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⏸️ XOLO EN ESPERA</p>
+                        <ul>
+                            <li>Disponible solo si hay dudas finales urgentes.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Demuestra su programa funcionando a otra pareja.</li>
+                            <li>Explica qué perspectivas resultaron más convincentes y por qué.</li>
+                            <li>Comparte un descubrimiento interesante.</li>
+                            <li>Da retroalimentación positiva al compañero.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 4: Think-Pair-Share</h4>
+                    <div class="slide-content tps-structure">
+                        <div class="tps-phase">
+                            <h4>🤔 THINK (30 seg)</h4>
+                            <p>Reflexión individual: ¿Qué roles aportaron la información más sorprendente y qué sesgos detectaste?</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>👥 PAIR (2 min)</h4>
+                            <p>Con otra pareja: Demuestren su programa y expliquen su experiencia</p>
+                            <p class="highlight-text">Frase guía: "Mi panel analizó el tema de [TEMA] con roles de [ROLES]. Me sorprendió que la perspectiva de [ROL] omitiera [SESGO/SUPUESTO]."</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>💬 SHARE (2 min)</h4>
+                            <p>Retroalimentación mutua y cierre del maestro.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ACTIVIDAD 5: ENTREGA DE EVIDENCIAS -->
+            <div class="activity-card" id="activity-5">
+                <div class="activity-header">
+                    <h2>✅ Actividad 5: Entrega de Evidencias</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
+                    </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 5 con las instrucciones.</li>
+                            <li>Guía a los estudiantes para tomar las capturas.</li>
+                            <li>Asegura que todos suban sus evidencias a Gnius Space.</li>
+                            <li>Felicita al grupo por completar la misión.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⭕ XOLO FINALIZADO</p>
+                        <ul>
+                            <li>La interacción con XOLO ha terminado para esta misión.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Tomar screenshot de su código en MakeCode.</li>
+                            <li>Tomar screenshot de su conversación con XOLO.</li>
+                            <li>Subir ambas evidencias a Gnius Space.</li>
+                            <li>Dar click en "Finalizar Misión".</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 5: ¡Misión Cumplida!</h4>
+                    <div class="slide-content">
+                        <p><strong>📸 Para terminar, sube tus evidencias a Gnius Space:</strong></p>
+                        <ol>
+                            <li>Una captura de pantalla de tu programa final en <strong>MakeCode</strong>.</li>
+                            <li>Una captura de pantalla de tu conversación con <strong>XOLO</strong> donde te dio tu GCS.</li>
+                        </ol>
+                        <p class="highlight-text" style="margin-top: 1rem;">¡No olvides dar click en el botón <strong>"Finalizar Misión"</strong> cuando termines!</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
 </body>
-</html>
+</html></html>
